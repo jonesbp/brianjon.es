@@ -5,6 +5,8 @@ description: >
   Brian Jones is a web developer and historian living in Columbus, OH.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://brianjon.es" # the base hostname & protocol for your site
+twitter_username: jonesbp
+github_username:  jonesbp
 
 # Build settings
 markdown: kramdown

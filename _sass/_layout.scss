@@ -10,16 +10,18 @@
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+  display: inline-block;
+  font-size: 26px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-right: 1em;
+  margin-bottom: 0;
+  vertical-align: bottom;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+  &,
+  &:visited {
+      color: $grey-color-dark;
+  }
 }
 
 /**
@@ -32,7 +34,20 @@ h2 {
 
 article {
   p {
-    font-size: $large-font-size;
+    font-size: $medium-font-size;
+  }
+}
+
+.post {
+  margin: $spacing-unit 0;
+
+  ul {
+    list-style-type: circle;
+
+    li {
+      font-size: $medium-font-size;
+      margin-bottom: $spacing-unit / 2;
+    }
   }
 }
 
@@ -42,6 +57,10 @@ article {
   h2 {
     color: $grey-color;
   }
+
+  p {
+    font-size: $large-font-size;
+  }
 }
 
 .then {
@@ -50,6 +69,10 @@ article {
 
   h2 {
     color: $grey-color;
+  }
+
+  p {
+    font-size: $large-font-size;
   }
 }
 
@@ -78,6 +101,34 @@ ul.adjacent-posts {
       float: right;
       text-align: right;
     }
+  }
+}
+
+ul.pages {
+  display: inline-block;
+  font-size: 26px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-right: 1em;
+  margin-bottom: 0;
+  margin-left: 0;
+  vertical-align: bottom;
+
+  li {
+    display: inline-block;
+    margin-right: .5em;
+    vertical-align: middle;
+  }
+}
+
+ul.social-media-list {
+  display: inline-block;
+  vertical-align: middle;
+
+  li {
+    display: inline-block;
+    margin-right: .5em;
+    vertical-align: middle;
   }
 }
 
