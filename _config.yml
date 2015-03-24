@@ -1,0 +1,10 @@
+# Site settings
+title: Brian Jones
+email: jonesbp@me.com 
+description: >
+  Brian Jones is a web developer and historian living in Columbus, OH.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://brianjon.es" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown

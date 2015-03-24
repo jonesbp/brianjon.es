@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="then">
+  <header class="post-header">
+    <h2>On {{ page.date | date: '%B %d, %Y' }}, I claimed…</h2>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+</div>
+
+<div class="now">
+  <header class="post-header">
+    <h2>But since {{ site.posts.first.date | date: '%B %d, %Y' }}…</h2>
+  </header>
+
+  <article class="post-content">
+    {{ site.posts.first.content | markdownify }}
+  </article>
+</div>
