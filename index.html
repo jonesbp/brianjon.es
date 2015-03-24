@@ -3,22 +3,26 @@ layout: default
 ---
 
 <div class="now">
-  <h2>As of {{ site.posts.first.date | date: '%B %d, %Y' }}…</h2>
+  <div class="wrapper">
+    <article>
+      <h2>As of {{ site.posts.first.date | date: '%B %d, %Y' }}…</h2>
 
-  <article>
-    {{ site.posts.first.content }}
-  </article>
+      {{ site.posts.first.content }}
+    </article>
+  </div>
 </div>
 
 <div class="then">
-  <h2>Before that…</h2>
+  <div class="wrapper">
+    <h2>Before that…</h2>
 
-  <ul class="old-bios">
-    {% for post in site.posts %}
-      {% if forloop.first %}
-      {% else %}
-        <a href="{{ post.url }}">On {{ post.date | date: '%B %d, %Y' }}, I was…</a>
-      {% endif %}
-    {% endfor %}
-  </ul>
+    <ul class="old-bios">
+      {% for post in site.posts %}
+        {% if forloop.first %}
+        {% else %}
+          <a href="{{ post.url }}">On {{ post.date | date: '%B %d, %Y' }}, I was…</a>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 </div>
