@@ -10,6 +10,28 @@ layout: default
     <article class="post-content">
       {{ content }}
     </article>
+
+    <ul class="adjacent-posts">
+      {% for temp in site.posts %}
+        {% unless temp.date <= page.date %}
+          {% assign prev = temp %}
+          {% assign next = temp %}
+        {% endunless %}
+        {% if next.date == prev.date %}
+          {% if temp.date < page.date %}
+            {% assign prev = temp %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% unless next == prev %}
+        <li class="previous"><a href="{{ prev.url }}">On {{ prev.date | date: '%B %d, %Y' }}…</a></li>
+      {% endunless %}
+      {% if next == site.posts.first %}
+        <li class="next"><a href="{{ site.baseurl }}/">Most recently…</a></li>
+      {% else %}
+        <li class="next"><a href="{{ next.url }}">On {{ next.date | date: '%B %d, %Y' }}…</a></li>
+      {% endif %}
+    </ul>
   </div>
 </div>
 

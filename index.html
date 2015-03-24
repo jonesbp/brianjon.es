@@ -20,7 +20,7 @@ layout: default
       {% for post in site.posts %}
         {% if forloop.first %}
         {% else %}
-          <a href="{{ post.url }}">On {{ post.date | date: '%B %d, %Y' }}, I was…</a>
+          <li><a href="{{ post.url }}">On {{ post.date | date: '%B %d, %Y' }}, I was…</a></li>
         {% endif %}
       {% endfor %}
     </ul>
