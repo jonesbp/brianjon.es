@@ -63,6 +63,20 @@ article {
   }
 }
 
+span.addition {
+  background-color: #c8f3a5;
+  border-radius: .25em;
+  padding: 0 .25em;
+}
+
+span.deletion {
+  background-color: #ffd9c9;
+  border-radius: .25em;
+  color: #a22d1d;
+  padding: 0 .25em;
+  text-decoration: line-through;
+}
+
 .then {
   background-color: $background-grey;
   padding: $spacing-unit 0;
@@ -74,6 +88,7 @@ article {
   p {
     font-size: $large-font-size;
   }
+
 }
 
 ul.old-bios {
