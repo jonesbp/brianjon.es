@@ -10,3 +10,5 @@ github_username:  jonesbp
 
 # Build settings
 markdown: kramdown
+collections:
+  - nows

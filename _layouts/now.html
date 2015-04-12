@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div class="then">
+  <div class="wrapper">
+    <header class="post-header">
+      <h2>On {{ page.date | date: '%B %d, %Y' }}, I claimed…</h2>
+    </header>
+
+    <article class="post-content">
+      {{ page.this_now_content | markdownify }}
+    </article>
+
+    <ul class="adjacent-posts">
+      {% if page.previous_now_link %}
+        <li class="previous"><a href="/nows/{{ page.previous_now_date | date: '%Y-%m-%d' }}">On {{ page.previous_now_date | date: '%B %d, %Y' }}…</a></li>
+      {% endif %}
+      {% if page.next_now_link %}
+        {% if page.next_now_link == "index" %}
+          <li class="next"><a href="{{ site.baseurl }}/">Most recently…</a></li>
+        {% else %}
+          <li class="next"><a href="/nows/{{ page.next_now_date | date: '%Y-%m-%d' }}">On {{ page.next_now_date | date: '%B %d, %Y' }}…</a></li>
+        {% endif %}
+      {% endif %}
+    </ul>
+
+  </div>
+</div>
+<div class="now">
+  <div class="wrapper">
+    <header class="post-header">
+      <h2>But since {{ page.present_now_date | date: '%B %d, %Y' }}…</h2>
+    </header>
+
+    <article class="post-content">
+      {{ page.present_now_content | markdownify }}
+    </article>
+ 
+  </div>
+</div>

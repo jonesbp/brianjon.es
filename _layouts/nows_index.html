@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="now">
+  <div class="wrapper">
+    <article>
+      <h2>As of {{ page.date | date: '%B %d, %Y' }}…</h2>
+
+      {{ page.present_now_content | markdownify }}
+    </article>
+  </div>
+</div>
+
+<div class="then">
+  <div class="wrapper">
+    <h2>Before that…</h2>
+
+    <ul class="old-bios">
+      {% old_bios %}
+    </ul>
+  </div>
+</div>
