@@ -12,7 +12,7 @@ module Jekyll
         html = '<ul class="old-bios">'
         nows.each do |now|
           unless now == nows.first
-            short_date = now.data['date'].to_s
+            short_date = now.data['date'].strftime('%Y-%m-%d').to_s
             long_date = now.data['date'].strftime('%B %d, %Y')
             html << "<li><a href=\"/nows/#{short_date}\">On #{long_date}, I was…</a></li>"
           end
@@ -110,7 +110,7 @@ module Jekyll
           end
 
           site.pages << NowPage.new(
-                        site, site.source, File.join('nows',this_now.data['date'].to_s),
+                        site, site.source, File.join('nows',this_now.data['date'].strftime('%Y-%m-%d').to_s),
                         this_now,previous_now,next_now,present_now)
         end
       end
