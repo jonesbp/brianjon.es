@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brian Jones</title>
+    <description>Brian Jones is a web developer and historian living in Columbus, OH.
+</description>
+    <link>http://brianjon.es/</link>
+    <atom:link href="http://brianjon.es/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 10 Jun 2016 14:09:32 +0200</pubDate>
+    <lastBuildDate>Fri, 10 Jun 2016 14:09:32 +0200</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+  </channel>
+</rss>
