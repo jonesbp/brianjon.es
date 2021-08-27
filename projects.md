@@ -5,7 +5,7 @@ title: Projects
 
 ## Active
 
-- [The Public Domain Review](https://publicdomainreview.org): An online journal and not-for-profit project dedicated to the exploration of curious and compelling works from the history of art, literature, and ideas.
+- [**The Public Domain Review**](https://publicdomainreview.org): An online journal and not-for-profit project dedicated to the exploration of curious and compelling works from the history of art, literature, and ideas.
 - [**Local Memory**](https://local-memory.org/): An ongoing public history project presenting a cultural geography of music performance in Austin, Texas.
 
 
