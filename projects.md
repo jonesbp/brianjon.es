@@ -6,11 +6,12 @@ title: Projects
 ## Active
 
 - [**The Public Domain Review**](https://publicdomainreview.org): An online journal and not-for-profit project dedicated to the exploration of curious and compelling works from the history of art, literature, and ideas.
-- [**Local Memory**](https://local-memory.org/): An ongoing public history project presenting a cultural geography of music performance in Austin, Texas.
+- [Public Domain Image Archive](https://pdimagearchive.org): A hand-picked collection of over 10,000 out-of-copyright works, free for all to browse, download, and reuse.
 
 
 ## Past
 
+- [**Local Memory**](https://local-memory.org/): An ongoing public history project presenting a cultural geography of music performance in Austin, Texas.
 - [**Backlist**](http://backlist.cc): Co-founded in 2015 with colleagues from _The Appendix_. [Jekyll](http://jekyllrb.com)-generated site extended with custom plugins. Designed with an eye towards demonstrating low-tech, low-cost publishing options beyond ‘blogs’ for humanities projects online.
 - **_Archipelagic Empire_ Project**: Book project based on my 2014 dissertation for the history department at UT-Austin.
 - [**_The Appendix_**](https://theappendix.net): Co-founded in 2012 with colleagues from the UT-Austin history department. Developed Ruby on Rails publishing and subscription platform as well as e-book publishing toolchain for monthly deliveries to subscribers.  
